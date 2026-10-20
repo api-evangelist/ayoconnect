@@ -2,7 +2,7 @@ generated: '2026-10-20'
 method: derived
 generator: derive-problem-types.py
 source:
-- openapi/ayoconnect-ayoconnect-api-openapi.yml
+- openapi/ayoconnect-bill-api-openapi.yml
 format: custom
 envelope:
   media_type: application/json

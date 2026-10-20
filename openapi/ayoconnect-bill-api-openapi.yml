@@ -82,7 +82,7 @@ paths:
       x-operation-id-source: derived
 components:
   schemas:
-    StatusResponse:
+    AuthenticationFailed:
       properties:
         responseCode:
           type: integer
@@ -95,46 +95,8 @@ components:
             EN:
               type: string
         data:
-          properties:
-            refNumber:
-              type: string
-            transactionId:
-              type: integer
-            accountNumber:
-              type: string
-            amount:
-              type: integer
-            totalAdmin:
-              type: integer
-            processingFee:
-              type: integer
-            denom:
-              type: string
-            productCode:
-              type: string
-            productName:
-              type: string
-            category:
-              type: string
-            token:
-              type: string
-            customerDetail:
-              type: array
-              items:
-                type: object
-            billDetails:
-              type: array
-              items:
-                type: object
-            productDetails:
-              type: array
-              items:
-                type: object
-            extraFields:
-              type: array
-              items:
-                type: object
-    PaymentResponse:
+          type: object
+    StatusResponse:
       properties:
         responseCode:
           type: integer
@@ -236,7 +198,7 @@ components:
               type: array
               items:
                 type: object
-    AuthenticationFailed:
+    PaymentResponse:
       properties:
         responseCode:
           type: integer
@@ -249,7 +211,45 @@ components:
             EN:
               type: string
         data:
-          type: object
+          properties:
+            refNumber:
+              type: string
+            transactionId:
+              type: integer
+            accountNumber:
+              type: string
+            amount:
+              type: integer
+            totalAdmin:
+              type: integer
+            processingFee:
+              type: integer
+            denom:
+              type: string
+            productCode:
+              type: string
+            productName:
+              type: string
+            category:
+              type: string
+            token:
+              type: string
+            customerDetail:
+              type: array
+              items:
+                type: object
+            billDetails:
+              type: array
+              items:
+                type: object
+            productDetails:
+              type: array
+              items:
+                type: object
+            extraFields:
+              type: array
+              items:
+                type: object
   parameters:
     ApiVersion:
       in: header
@@ -258,18 +258,18 @@ components:
       description: Api version to be used (1.0.2-rc)
       schema:
         type: string
-    AccessKeyId:
-      in: header
-      name: KEY
-      required: true
-      description: Client Access Id provided while registration with Ayopop (5afe25fa)
-      schema:
-        type: string
     AccessToken:
       in: header
       name: TOKEN
       required: true
       description: JWT Auth token or Secret - Pre Shared key (ascasc.asas.asasasf121q21221sdf1hbvv)
+      schema:
+        type: string
+    AccessKeyId:
+      in: header
+      name: KEY
+      required: true
+      description: Client Access Id provided while registration with Ayopop (5afe25fa)
       schema:
         type: string
 x-provenance:

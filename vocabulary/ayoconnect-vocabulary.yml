@@ -1,30 +1,35 @@
 generated: '2026-10-20'
 method: derived
 generator: derive-vocabulary.py
-source: openapi/ayoconnect-ayoconnect-api-openapi.yml
+source: openapi/ayoconnect-bill-api-openapi.yml
 vocabulary:
   name: Ayoconnect Domain Vocabulary
   description: 'Terms declared by Ayoconnect''s own API contract: its resource groups, objects and enumerations, with the contract''s definitions.
     Derived, not authored.'
   version: '2026-10-20'
   terms:
-  - term: InquiryResponse
-    definition: 'Object declared by the contract with fields: responseCode, success, message, data.'
-    tags:
-    - Object
-    source: openapi/ayoconnect-ayoconnect-api-openapi.yml#/components/schemas/InquiryResponse
-  - term: AuthenticationFailed
-    definition: 'Object declared by the contract with fields: responseCode, success, message, data.'
-    tags:
-    - Object
-    source: openapi/ayoconnect-ayoconnect-api-openapi.yml#/components/schemas/AuthenticationFailed
-  - term: PaymentResponse
-    definition: 'Object declared by the contract with fields: responseCode, success, message, data.'
-    tags:
-    - Object
-    source: openapi/ayoconnect-ayoconnect-api-openapi.yml#/components/schemas/PaymentResponse
   - term: StatusResponse
     definition: 'Object declared by the contract with fields: responseCode, success, message, data.'
     tags:
     - Object
-    source: openapi/ayoconnect-ayoconnect-api-openapi.yml#/components/schemas/StatusResponse
+    source: openapi/ayoconnect-bill-api-openapi.yml#/components/schemas/StatusResponse
+  - term: PaymentResponse
+    definition: 'Object declared by the contract with fields: responseCode, success, message, data.'
+    tags:
+    - Object
+    source: openapi/ayoconnect-bill-api-openapi.yml#/components/schemas/PaymentResponse
+  - term: InquiryResponse
+    definition: 'Object declared by the contract with fields: responseCode, success, message, data.'
+    tags:
+    - Object
+    source: openapi/ayoconnect-bill-api-openapi.yml#/components/schemas/InquiryResponse
+  - term: AuthenticationFailed
+    definition: 'Object declared by the contract with fields: responseCode, success, message, data.'
+    tags:
+    - Object
+    source: openapi/ayoconnect-bill-api-openapi.yml#/components/schemas/AuthenticationFailed
+  - term: Bill
+    definition: 'Resource group in the contract; its operation POST /v1/bill/check: Inquiry API'
+    tags:
+    - Resource Group
+    source: openapi/ayoconnect-bill-api-openapi.yml

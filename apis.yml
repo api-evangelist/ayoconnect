@@ -1,39 +1,28 @@
 aid: ayoconnect
-
 name: Ayoconnect
-
 image: https://cdn.prod.website-files.com/62b35c994f35a868d97f78dd/67a061928af8f263184e2f51_website_ayo_og_image.jpg
-
-description: 'Ayoconnect provides a comprehensive payment platform in Indonesia, offering solutions such as payment gateway, recurring payments, direct debit, instant transfers, virtual cards, and digital product integrations. It serves businesses seeking seamless, scalable payment processing and financial services, backed by robust APIs and extensive documentation.'
-
+description: Ayoconnect provides a comprehensive payment platform in Indonesia, offering solutions such as payment gateway, recurring payments,
+  direct debit, instant transfers, virtual cards, and digital product integrations. It serves businesses seeking seamless, scalable payment processing
+  and financial services, backed by robust APIs and extensive documentation.
 url: https://raw.githubusercontent.com/api-evangelist/ayoconnect/refs/heads/main/apis.yml
-
 x-type: company
-
 x-source: harvest:g2-catalog
-
 x-tier: profiled
 x-tier-reason: enrichment pass 2026-10-19 (modular-v1; was harvest)
-
 specificationVersion: '0.20'
-
 created: '2026-10-19'
-
 modified: '2026-10-19'
-
 tags:
 - Company
 - Payments
 - API
 - FinTech
 - Indonesia
-
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-
 common:
 - type: AgenticAccess
   url: agentic-access/ayoconnect-agentic-access.yml
@@ -75,7 +64,6 @@ common:
   url: https://www.ayoconnect.com/contact
 - type: PrivacyPolicy
   url: https://www.ayoconnect.com/privacy-policy
-
 apis:
 - aid: ayoconnect:ayoconnect-bill-api
   name: Ayoconnect Bill API
@@ -85,6 +73,12 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/ayoconnect-bill-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/ayoconnect-payment-response-schema.json
+  - type: JSONSchema
+    url: json-schema/ayoconnect-status-response-schema.json
+  - type: JSONSchema
+    url: json-schema/ayoconnect-inquiry-response-schema.json
 x-enrichment:
   date: '2026-10-19'
   status: enriched
