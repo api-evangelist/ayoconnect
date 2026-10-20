@@ -1,0 +1,20 @@
+generated: '2026-10-20'
+method: derived
+generator: derive-data-model.py
+source:
+- openapi/ayoconnect-ayoconnect-api-openapi.yml
+notation: has_one = property $ref; has_many = array of $ref; belongs_to = <entity>_id field
+summary:
+  entities: 4
+  entities_in_spec: 4
+  relationships: 0
+entities:
+- name: AuthenticationFailed
+  fields: 4
+- name: InquiryResponse
+  fields: 4
+- name: PaymentResponse
+  fields: 4
+- name: StatusResponse
+  fields: 4
+relationships: []

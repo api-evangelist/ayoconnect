@@ -1,23 +1,93 @@
 aid: ayoconnect
+
 name: Ayoconnect
-description: 'Ayoconnect is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/62b35c994f35a868d97f78dd/67a061928af8f263184e2f51_website_ayo_og_image.jpg
+
+description: 'Ayoconnect provides a comprehensive payment platform in Indonesia, offering solutions such as payment gateway, recurring payments, direct debit, instant transfers, virtual cards, and digital product integrations. It serves businesses seeking seamless, scalable payment processing and financial services, backed by robust APIs and extensive documentation.'
+
 url: https://raw.githubusercontent.com/api-evangelist/ayoconnect/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-19 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-19'
+
 modified: '2026-10-19'
+
 tags:
 - Company
-apis: []
+- Payments
+- API
+- FinTech
+- Indonesia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: AgenticAccess
+  url: agentic-access/ayoconnect-agentic-access.yml
+- type: Spectral
+  url: rules/ayoconnect-rules.yml
+- type: JSONLD
+  url: json-ld/ayoconnect-context.jsonld
+- type: Vocabulary
+  url: vocabulary/ayoconnect-vocabulary.yml
+- type: DataModel
+  url: data-model/ayoconnect-data-model.yml
+- type: ChangeLog
+  url: changelog/ayoconnect-changelog.yml
+- type: Authentication
+  url: authentication/ayoconnect-authentication.yml
+- type: ErrorCatalog
+  url: errors/ayoconnect-problem-types.yml
+- type: Conformance
+  url: conformance/ayoconnect-conformance.yml
+- type: LLMsTxt
+  url: llms/ayoconnect-llms.txt
+- type: Hosts
+  url: hosts/ayoconnect-hosts.yml
+- type: Vendors
+  url: vendors/ayoconnect-vendors.yml
+- type: GettingStarted
+  url: https://docs.ayoconnect.id/docs/setup-and-connection
+- type: DomainSecurity
+  url: security/ayoconnect-domain-security.yml
 - type: Website
-  url: https://ayoconnect.id/
+  url: https://www.ayoconnect.com/
+- type: Documentation
+  url: https://www.ayoconnect.com/api-documentation
+- type: DeveloperPortal
+  url: https://developer.ayoconnect.id/
+- type: Blog
+  url: https://www.ayoconnect.com/blog
+- type: Support
+  url: https://www.ayoconnect.com/contact
+- type: PrivacyPolicy
+  url: https://www.ayoconnect.com/privacy-policy
+
+apis:
+- aid: ayoconnect:ayoconnect-bill-api
+  name: Ayoconnect Bill API
+  description: The Bill API from Ayoconnect — 3 operation(s) for bill.
+  tags:
+  - Bill
+  properties:
+  - type: OpenAPI
+    url: openapi/ayoconnect-bill-api-openapi.yml
+x-enrichment:
+  date: '2026-10-19'
+  status: enriched
+  artifacts_added: 23
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

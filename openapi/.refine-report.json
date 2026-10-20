@@ -1,0 +1,27 @@
+{
+  "provider": "ayoconnect",
+  "sources": [
+    "ayoconnect-ayoconnect-api-openapi.yml"
+  ],
+  "outputs": [
+    "ayoconnect-bill-api-openapi.yml"
+  ],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
+  "errors": [],
+  "warnings": [
+    "ayoconnect-ayoconnect-api-openapi.yml: previously refined output kept for 3 operation(s) no archived document covers (e.g. /v1/bill/check post, /v1/bill/payment post, /v1/bill/status post); its other 0 operation(s) came from the archive and were dropped from it. The archive is incomplete for this provider \u2014 re-harvest to restore _original/ as the full source of truth."
+  ],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "ayoconnect-ayoconnect-api-openapi.yml: upgraded openapi 3.0.0 -> OpenAPI 3.2.0",
+    "ayoconnect-ayoconnect-api-openapi.yml: tagged paths POST /v1/bill/check -> Bill",
+    "ayoconnect-ayoconnect-api-openapi.yml: tagged paths POST /v1/bill/payment -> Bill",
+    "ayoconnect-ayoconnect-api-openapi.yml: tagged paths POST /v1/bill/status -> Bill",
+    "ayoconnect-ayoconnect-api-openapi.yml: declared missing tag: Bill",
+    "superseded outputs removed: ayoconnect-ayoconnect-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 1 total)"
+  ],
+  "skipped": []
+}

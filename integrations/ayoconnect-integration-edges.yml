@@ -1,0 +1,16 @@
+generated: '2026-10-19'
+method: none
+source:
+- https://zapier.com/apps/ayoconnect/integrations
+- https://n8n.io/integrations/ayoconnect/
+- https://composio.dev/toolkits/ayoconnect
+- https://monid.ai/tools/ayoconnect
+checked:
+- https://composio.dev/toolkits/ayoconnect
+- https://monid.ai/tools/ayoconnect
+- https://n8n.io/integrations/ayoconnect/
+- https://zapier.com/apps/ayoconnect/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

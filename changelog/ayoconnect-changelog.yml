@@ -1,0 +1,58 @@
+generated: '2026-10-19'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.payments.of.ayoconnect.id/docs/changelog-copy
+sources:
+- https://docs.payments.of.ayoconnect.id/docs/changelog-copy
+- https://docs.payments.of.ayoconnect.id/docs/changelog-1
+- https://docs.payments.of.ayoconnect.id/docs/changelog
+- https://docs.payments.of.ayoconnect.id/docs/copy-of-changelog
+entries:
+- breaking: false
+  highlights:
+  - Added more details and parameters to the additionalInfo field in the Get OAuth Code API, Direct Debit Payment API.
+  - Added three new fields to the additionalInfo field that should allow the clients to display these fields in the dashboard (these fields will
+    be returned in the responses and callbacks as well).
+  date: '2024-10-29'
+- breaking: false
+  highlights:
+  - Updated the 'seamlessData' field in the Get OAuth Code API.
+  - Add a new userId field and improved the field description.
+  date: '2024-09-13'
+- breaking: false
+  highlights:
+  - Updated the callback in the Account Binding API.
+  - The tokenExpiryDate field was not included in the callback body and it has been corrected.
+  date: '2024-04-26'
+- breaking: false
+  highlights:
+  - Updated the response in the Account Binding API.
+  - The response was not correctly defined and it has been corrected.
+  date: '2024-04-26'
+- breaking: false
+  highlights:
+  - Updated the diagram in the Card Unbinding flow.
+  - The B2B Auth Token was mentioned when it should be B2B2C Auth Token.
+  date: '2024-04-24'
+- breaking: false
+  highlights:
+  - Updated tokenStatus description and values in the Account Binding and Get a List of Cards Bound to a Customer APIs.
+  - Added some description to all the possible values and removed the INACTIVE value from the list.
+  date: '2024-04-24'
+- breaking: false
+  highlights:
+  - Reviewed the Response Description for one of the errors in the Errors page.
+  - Changed the response description from The bank card token or account token is invalid to The bank card token or account token is invalid/expired.
+  date: '2024-04-24'
+- breaking: false
+  highlights:
+  - Reviewed Product Flows page.
+  - We have added more details to the flows and the APIs involved in each of them.
+  date: '2024-03-22'
+- breaking: false
+  highlights:
+  - Added failureRedirectUrl parameter to the Get OAuth Code API
+  - The system will redirect the customer to the failureRedirectUrl after a failed card binding.
+  date: '2024-03-19'
+note: The pages do not provide a versioning scheme or a current version for this changelog.
+docs: https://docs.payments.of.ayoconnect.id/docs/changelog-copy

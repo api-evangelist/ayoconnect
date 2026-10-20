@@ -1,0 +1,119 @@
+generated: '2026-10-20'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 9
+  own: 3
+  other_domain: 6
+  platform: 0
+  roles:
+  - api
+  - docs
+  - other
+  - portal
+  - website
+hosts:
+- host: api.ayoconnect.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: ayoconnect.com
+  role: api
+  relation: own
+- host: api.ayoconnect.id
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: ayoconnect.id
+  role: api
+  relation: other-domain
+- host: api.ayopop.id
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: ayopop.id
+  role: api
+  relation: other-domain
+- host: dev0.openapi.ayopop.id
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: ayopop.id
+  role: other
+  relation: other-domain
+- host: developer.ayoconnect.id
+  found_by:
+  - pointer
+  - probed
+  - well-known
+  types:
+  - DeveloperPortal
+  serves: []
+  registrable_domain: ayoconnect.id
+  role: portal
+  relation: other-domain
+- host: directdebit.developer.ayoconnect.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: ayoconnect.com
+  role: portal
+  relation: own
+- host: docs.ayoconnect.id
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - namespace-probe
+  - docs-index
+  - well-known
+  types:
+  - GettingStarted
+  serves:
+  - docs
+  title: Ayoconnect Billing API
+  status: 200
+  registrable_domain: ayoconnect.id
+  role: docs
+  relation: other-domain
+- host: docs.payments.of.ayoconnect.id
+  found_by:
+  - probed
+  - site-links
+  - docs-index
+  - well-known
+  types: []
+  serves:
+  - docs
+  registrable_domain: ayoconnect.id
+  role: docs
+  relation: other-domain
+- host: www.ayoconnect.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Documentation
+  - Blog
+  - Support
+  - PrivacyPolicy
+  serves:
+  - docs
+  - cdn
+  vendor: cloudflare
+  registrable_domain: ayoconnect.com
+  role: website
+  relation: own

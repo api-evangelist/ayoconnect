@@ -1,0 +1,12 @@
+generated: '2026-10-19'
+method: probed
+source: https://www.ayoconnect.com/privacy-policy
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://www.ayoconnect.com/privacy-policy
+        http_status: 200
+        fetched: "true"
+        quote: "PT ATI really respects the privacy of personal data and protects the rights of the entity to which the personal data is attached. However, PT ATI has the right to exclude the rights of Personal Data Subjects in accordance with the provisions of personal data protection laws and regulations in force in the Republic of Indonesia, including but not limited to the provisions of Article 15.1 of Law Number 27 of 2022 concerning Personal Data Protection."
+        section: "A. Introduction"
+        note: "Company states it respects privacy but explicitly reserves the right to exclude data subject rights, indicating a limited data subject request posture."

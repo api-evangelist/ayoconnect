@@ -1,0 +1,23 @@
+generated: '2026-10-19'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.payments.of.ayoconnect.id/reference/post_v1-oauth-client-credential-accesstoken
+sources:
+- https://docs.payments.of.ayoconnect.id/reference/post_v1-oauth-client-credential-accesstoken
+- https://docs.ayoconnect.id/docs/token-generation.md
+- https://docs.payments.of.ayoconnect.id/reference/av-access-token-b2b
+- https://docs.payments.of.ayoconnect.id/reference/dd-v3-access-token-b2b
+description: Authentication methods for Ayoconnect APIs
+schemes:
+- type: oauth2
+  name: B2B Access Token
+  evidence: This API is used to generate an 'Access Token,' which will be passed later in the header with the 'Authorization' key to other API
+    calls.
+  flows:
+  - client_credentials
+  - authorization_code
+  token_url: https://sandbox.api.of.ayoconnect.id/api/v3.0/access-token/b2b
+  how_to_obtain: Send a POST request with body parameter grantType and additionalInfo object; include headers X-TIMESTAMP, X-CLIENT-KEY, and X-SIGNATURE
+    as required.
+docs: https://docs.payments.of.ayoconnect.id/reference/post_v1-oauth-client-credential-accesstoken
+note: 1 extracted row(s) were dropped because their quote was not on the page.

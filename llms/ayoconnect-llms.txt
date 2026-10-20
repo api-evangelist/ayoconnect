@@ -1,0 +1,210 @@
+# Ayoconnect Developer API Hub Documentation
+
+> The Ayoconnect Developer API Hub provides the go to solution for businesses or organizations seeking to incorporate Ayoconnect APIs into their systems or applications.
+
+## Guides: INTRODUCTION
+- [Introduction](https://docs.payments.of.ayoconnect.id/docs/introduction-1.md): Ayoconnect Payments Developer Hub
+
+## Guides: Payment Solutions
+- [Direct Debit (v2)](https://docs.payments.of.ayoconnect.id/docs/direct-debit.md)
+  - [API Flows](https://docs.payments.of.ayoconnect.id/docs/product-flows.md): Direct Debit API Flows
+  - [Direct Debit Binding](https://docs.payments.of.ayoconnect.id/docs/direct-debit-binding-2.md)
+  - [Get Direct Debit Binding Details](https://docs.payments.of.ayoconnect.id/docs/get-direct-debit-binding-status.md)
+  - [Direct Debit Payment](https://docs.payments.of.ayoconnect.id/docs/direct-debit-payment.md)
+  - [Direct Debit Unbinding](https://docs.payments.of.ayoconnect.id/docs/direct-debit-unbinding.md)
+  - [Get a user's list of binding information](https://docs.payments.of.ayoconnect.id/docs/get-a-users-binding-information.md)
+  - [Error Codes](https://docs.payments.of.ayoconnect.id/docs/errors.md): Direct Debit List of Error Codes
+  - [Idempotency](https://docs.payments.of.ayoconnect.id/docs/idempotent-requests.md): The Direct Debit API supports idempotency for safely retrying requests without accidentally performing the same operation twice
+  - [Callbacks](https://docs.payments.of.ayoconnect.id/docs/callbacks.md): Listen to requests on your callback endpoint so your integration can automatically trigger reactions
+  - [Changelog](https://docs.payments.of.ayoconnect.id/docs/changelog.md): Keep track of every change to the Direct Debit API
+  - [Refunds](https://docs.payments.of.ayoconnect.id/docs/refunds-4.md): This page includes Ayoconnect Direct Debit Refund details
+- [Direct Debit (v3)](https://docs.payments.of.ayoconnect.id/docs/direct-debit-30.md)
+  - [API Flows](https://docs.payments.of.ayoconnect.id/docs/api-flows.md)
+  - [Direct Debit Binding](https://docs.payments.of.ayoconnect.id/docs/direct-debit-binding-1.md)
+  - [Get a user's list of binded accounts](https://docs.payments.of.ayoconnect.id/docs/get-users-binding-information.md)
+  - [Direct Debit Payment](https://docs.payments.of.ayoconnect.id/docs/direct-debit-payment-1.md)
+  - [Direct Debit Unbinding](https://docs.payments.of.ayoconnect.id/docs/direct-debit-unbinding-1.md)
+  - [Direct Debit Refund](https://docs.payments.of.ayoconnect.id/docs/direct-debit-refund.md)
+  - [Response Codes](https://docs.payments.of.ayoconnect.id/docs/error-codes-1.md)
+  - [Callbacks](https://docs.payments.of.ayoconnect.id/docs/callbacks-3.md)
+- [Virtual Account (v1)](https://docs.payments.of.ayoconnect.id/docs/virtual-account.md)
+  - [API Flows](https://docs.payments.of.ayoconnect.id/docs/product-flows-copy.md): Virtual Account API Flows
+  - [Important Terminologies](https://docs.payments.of.ayoconnect.id/docs/virtual-account-states.md)
+  - [Create Virtual Account](https://docs.payments.of.ayoconnect.id/docs/create-virtual-account.md)
+  - [Get Virtual Account](https://docs.payments.of.ayoconnect.id/docs/get-virtual-account.md)
+  - [Update Virtual Account](https://docs.payments.of.ayoconnect.id/docs/update-virtual-account.md)
+  - [Callbacks](https://docs.payments.of.ayoconnect.id/docs/callbacks-copy.md)
+  - [Error Codes](https://docs.payments.of.ayoconnect.id/docs/errors-1.md): Virtual Account List of Error Codes
+  - [Changelog](https://docs.payments.of.ayoconnect.id/docs/changelog-copy-1.md): Keep track of every change to the Virtual Account API
+- [Virtual Account (v2)](https://docs.payments.of.ayoconnect.id/docs/virtual-account-20.md)
+  - [API Flows](https://docs.payments.of.ayoconnect.id/docs/api-flows-1.md)
+  - [Important Terminologies](https://docs.payments.of.ayoconnect.id/docs/important-terminologies-2.md)
+  - [Create Virtual Account](https://docs.payments.of.ayoconnect.id/docs/create-virtual-account-1.md)
+  - [Inquiry Virtual Account](https://docs.payments.of.ayoconnect.id/docs/inquiry-virtual-account.md)
+  - [Update Virtual Account](https://docs.payments.of.ayoconnect.id/docs/update-virtual-account-1.md)
+  - [Payment & Callback](https://docs.payments.of.ayoconnect.id/docs/payment-callback.md)
+  - [Sandbox Payment Simulator](https://docs.payments.of.ayoconnect.id/docs/sandbox-payment-simulator.md)
+  - [Changelog](https://docs.payments.of.ayoconnect.id/docs/copy-of-changelog.md): Keep track of every change to the Virtual Account API
+- [Card Acceptance (v1)](https://docs.payments.of.ayoconnect.id/docs/card-acceptance.md): This section aims to describe the functionality and APIs needed to enable card acceptance on your platform.
+  - [API Flows](https://docs.payments.of.ayoconnect.id/docs/product-flows-3.md): Card Acceptance API Flows
+  - [Important Terminologies](https://docs.payments.of.ayoconnect.id/docs/important-terminologies.md)
+  - [Card Registration](https://docs.payments.of.ayoconnect.id/docs/generate-webview.md)
+  - [Card Payment](https://docs.payments.of.ayoconnect.id/docs/payment-charge.md)
+  - [Get Card Payment Status](https://docs.payments.of.ayoconnect.id/docs/get-payment-status.md)
+  - [Get Cards List](https://docs.payments.of.ayoconnect.id/docs/get-cards-list.md)
+  - [Card Unbinding](https://docs.payments.of.ayoconnect.id/docs/unbinding.md)
+  - [Response Codes](https://docs.payments.of.ayoconnect.id/docs/errors-2.md): Card Acceptance List of Response Codes
+  - [Changelog](https://docs.payments.of.ayoconnect.id/docs/changelog-1.md): Keep track of every change to the Card Acceptance API
+- [Card Acceptance (v2)](https://docs.payments.of.ayoconnect.id/docs/card-acceptance-v2.md)
+  - [API Flows](https://docs.payments.of.ayoconnect.id/docs/api-flows-2.md)
+  - [Important Terminologies](https://docs.payments.of.ayoconnect.id/docs/important-terminologies-3.md)
+
+## Guides: Disbursements
+- [Instant Transfers (v1)](https://docs.payments.of.ayoconnect.id/docs/instant-transfers.md)
+  - [API Flows](https://docs.payments.of.ayoconnect.id/docs/product-flows-1.md): Instant Transfers API Flows
+  - [Add Beneficiary](https://docs.payments.of.ayoconnect.id/docs/add-beneficairy.md)
+  - [Disbursement](https://docs.payments.of.ayoconnect.id/docs/add-beneficiary-copy-1.md)
+  - [Check Disbursement Status](https://docs.payments.of.ayoconnect.id/docs/add-beneficiary-copy.md)
+  - [Check Balance](https://docs.payments.of.ayoconnect.id/docs/check-transaction-status-copy.md)
+  - [Callbacks](https://docs.payments.of.ayoconnect.id/docs/callbacks-1.md)
+  - [Bank & E-Wallet Channels Supported](https://docs.payments.of.ayoconnect.id/docs/bank-ewallet-channels-supported.md)
+  - [Changelog](https://docs.payments.of.ayoconnect.id/docs/changelog-copy.md): Keep track of every change to the Instant Transfers API
+  - [Important Notes and F.A.Q](https://docs.payments.of.ayoconnect.id/docs/important-notes.md)
+  - [Idempotency ](https://docs.payments.of.ayoconnect.id/docs/idempotency-copy-1.md): The Instant Transfer API supports idempotency for safely retrying requests without accidentally performing the same operation twice
+  - [Error Codes](https://docs.payments.of.ayoconnect.id/docs/error-codes.md): Instant Transfers List of Error Codes
+- [Instant Transfers (v2)](https://docs.payments.of.ayoconnect.id/docs/instant-transfer-v2-snap.md)
+  - [API Flows](https://docs.payments.of.ayoconnect.id/docs/it-v2-api-flows.md): Instant Transfers API Flows
+  - [Important Terminologies](https://docs.payments.of.ayoconnect.id/docs/it-v2-important-terminologies.md)
+  - [Account Validation API](https://docs.payments.of.ayoconnect.id/docs/it-v2-account-validation.md): Service Code: 16
+  - [Disbursement API](https://docs.payments.of.ayoconnect.id/docs/it-v2-disbursement.md): Service Code: 18
+  - [Status Inquiry API](https://docs.payments.of.ayoconnect.id/docs/it-v2-status-inquiry.md)
+  - [Response Codes](https://docs.payments.of.ayoconnect.id/docs/it-v2-error-codes.md): Instant Transfers List of Response Codes
+  - [Supported Banks & E-Wallets](https://docs.payments.of.ayoconnect.id/docs/it-v2-supported-banks.md)
+
+## Guides: Manage Payments
+- [Merchant Dashboard](https://docs.payments.of.ayoconnect.id/docs/payment-dashboard.md): A single dashboard to track all your payments across solutions
+
+## API Reference: Introduction
+- [Introduction](https://docs.payments.of.ayoconnect.id/reference/introduction.md)
+
+## API Reference: Direct Debit (2.0.0)
+- [Generate B2B Access Token API](https://docs.payments.of.ayoconnect.id/reference/generatetokenb2b.md)
+- [Generate B2B2C Customer Authorization Token API](https://docs.payments.of.ayoconnect.id/reference/generatetokenb2b2c.md)
+- [Get OAuth Code API](https://docs.payments.of.ayoconnect.id/reference/getoauthurl-1.md): This API is used to Get Auth Code which is appended into base URL to open the card binding webview. <br/><br/>*Service Code: 30*
+- [Account Binding API](https://docs.payments.of.ayoconnect.id/reference/binding-1.md): This API is used to get card details after successful card binding (if returned, store the 'accountToken' to be used for the calls to the 'Direct Debit Payment' and 'Account Unbinding' APIs).…
+- [Account Unbinding API](https://docs.payments.of.ayoconnect.id/reference/unbinding.md)
+- [Direct Debit Payment API](https://docs.payments.of.ayoconnect.id/reference/payment-1.md): This API is used to do Direct Debit Payment using an already bound card.<br/> In case of any HTTP response code other than 2XX received in the response, please <b>'DO NOT FAIL'</b> the…
+- [Verify OTP API](https://docs.payments.of.ayoconnect.id/reference/verifyotp.md)
+- [Get a List of Accounts Bound to a Customer API](https://docs.payments.of.ayoconnect.id/reference/getcardslist.md)
+- [Get the Status of a transaction API](https://docs.payments.of.ayoconnect.id/reference/getpaymentstatus-1.md): This API is used to Get the status of a transaction.<br/><br/> In case of any HTTP response code other than 200 received in the response, please <b>'DO NOT FAIL'</b> the transaction.<br/><br/>…
+
+## API Reference: Direct Debit V3 APIs
+- [Generate B2B Access Token API](https://docs.payments.of.ayoconnect.id/reference/dd-v3-access-token-b2b.md): This API is used to generate an 'Access Token,' which will be passed later in the header with the 'Authorization' key to other API calls. It is recommended to store and reuse it for the duration of…
+- [Generate B2B2C Customer Authorization Token API](https://docs.payments.of.ayoconnect.id/reference/dd-v3-access-token-b2b2c.md): This API is used to get customer specific Authorization Token which is used to perform any customer specific operation i.e. Charge Payment. This Token is passed along with B2B Token.…
+- [Account Binding API](https://docs.payments.of.ayoconnect.id/reference/dd-v3-registration-account-binding.md): This API is used to generate the binding URL. It creates a unique customer record and initiates the Account Binding process. <br/><br/>*Service Code: 07*
+- [Account Binding Inquiry](https://docs.payments.of.ayoconnect.id/reference/dd-v3-registration-account-inquiry.md): This API is used to get detail for binded card. It will return detail information related the card that have been binded before. <br/><br/>*Service Code: 08*
+- [Account Unbinding API](https://docs.payments.of.ayoconnect.id/reference/dd-v3-registration-account-unbinding.md): This API is used to unbind an already bound card. <br/><br/>*Service Code: 09*
+- [Direct Debit Payment API](https://docs.payments.of.ayoconnect.id/reference/dd-v3-debit-payment-host-to-host.md): This API is used to perform Direct Debit payment using a bound account. Clients should refer to `latestTransactionStatus` as the source of truth for the payment status. *The transaction should not be…
+- [Payment Refund API](https://docs.payments.of.ayoconnect.id/reference/dd-v3-debit-refund.md): This API is used to do payment refund for Direct Debit. <br/><br/>*Service Code: 58*
+- [Payment Status API](https://docs.payments.of.ayoconnect.id/reference/dd-v3-debit-status.md): This API is used to retrieve the latest Direct Debit payment status and transaction details.<br/> Clients should use <code>latestTransactionStatus</code> as the main reference for the payment…
+- [Verify OTP API](https://docs.payments.of.ayoconnect.id/reference/dd-v3-otp-verification.md): This API is used to Verify OTP either for Direct Debit Payment or Account Unbinding. <br/> In case of any HTTP response code other than 2XX received in the response, please <b>'DO NOT FAIL'</b> the…
+
+## API Reference: Account Verification (1.0.0)
+- [B2B Access Token](https://docs.payments.of.ayoconnect.id/reference/av-access-token-b2b.md): This API is used to generate an 'Access Token,' which will be passed later in the header with the 'Authorization' key to other API calls. It is recommended to store and reuse it for the duration of…
+- [Account Verification](https://docs.payments.of.ayoconnect.id/reference/av-account-verification.md): This API is used to validate bank accounts.   - A response code `2001600` indicates that the request has been successfully accepted and is being processed asynchronously.   - If a `5XX16XX` response…
+
+## API Reference: Virtual Account Service (1.0.0)
+- [Ayoconnect Access Token](https://docs.payments.of.ayoconnect.id/reference/generateaccesstoken-2.md): API to generate access token
+- [Create a Virtual Account](https://docs.payments.of.ayoconnect.id/reference/createvirtualaccount-2.md): This API creates a new Virtual Account. The API returns a 201 HTTP response code in case of a successful Virtual Account creation. The API returns a 401 HTTP response code in case of a missing or…
+- [Update Virtual Account](https://docs.payments.of.ayoconnect.id/reference/updatevirtualaccount-2.md): This API can update the VA Name, Expires In, Amount, and Virtual Account Type. The BNI VA amount cannot be updated to an amount lower than the previous amount.  The API returns a 200 HTTP response…
+- [Get a Virtual Account Details/Status](https://docs.payments.of.ayoconnect.id/reference/getvirtualaccountdetails.md): This API gives details of a created Virtual Account. The details includes expiration date, amount, etc. The API returns a 200 HTTP response code in case of a successful retrieval of a created Virtual…
+
+## API Reference: VIRTUAL ACCOUNT SNAP(2.0.0)
+- [B2B Access Token](https://docs.payments.of.ayoconnect.id/reference/va-snap-b2b-access-token.md): API B2B Access Token.
+- [Create VA](https://docs.payments.of.ayoconnect.id/reference/va-snap-create-va.md): API Create VA.
+- [Inquiry VA](https://docs.payments.of.ayoconnect.id/reference/va-snap-inquiry-va.md): API Inquiry VA.
+- [Update VA](https://docs.payments.of.ayoconnect.id/reference/va-snap-update-va.md): API Update VA.
+
+## API Reference: CARD ACCEPTANCE API (1.0.0)
+- [Ayoconnect Access Token](https://docs.payments.of.ayoconnect.id/reference/post_v1-oauth-client-credential-accesstoken.md): API to generate access token for Ayoconnect services
+- [Generate Webview](https://docs.payments.of.ayoconnect.id/reference/post_api-v1-lab-mpgs-cards-generate-webview.md): API to generate webview to do Binding
+- [Charge Payment](https://docs.payments.of.ayoconnect.id/reference/post_api-v1-lab-mpgs-cards-create-charge.md): API to do payment to binded card
+- [Payment Status](https://docs.payments.of.ayoconnect.id/reference/get_api-v1-lab-mpgs-cards-charge.md): Get payment status
+- [Get Card Details List](https://docs.payments.of.ayoconnect.id/reference/get_api-v1-lab-mpgs-cards-list-cards.md): API to get cards
+- [Card Unbinding](https://docs.payments.of.ayoconnect.id/reference/post_api-v1-lab-mpgs-cards-unbinding.md): API to unbind a card from a customer
+
+## API Reference: Instant Transfer Service (1.0.0)
+- [Add Beneficiary](https://docs.payments.of.ayoconnect.id/reference/addbeneficiary.md)
+- [Disbursement](https://docs.payments.of.ayoconnect.id/reference/disbursement.md)
+- [Disbursement status](https://docs.payments.of.ayoconnect.id/reference/disbursementstatus.md)
+- [Merchant Balance](https://docs.payments.of.ayoconnect.id/reference/merchantbalance.md): This API will return merchant available balance.  The API returns a 200 HTTP response code in case of a success response.  The API returns a 400 HTTP response code in case of a bad request (for…
+
+## API Reference: Instant Transfer (2.0.0)
+- [Generate B2B Access Token API](https://docs.payments.of.ayoconnect.id/reference/it-v3-access-token-b2b.md): This API is used to generate an 'Access Token,' which will be passed later in the header with the 'Authorization' key to other API calls. It is recommended to store and reuse it for the duration of…
+- [Generate B2B2C Customer Authorization Token API](https://docs.payments.of.ayoconnect.id/reference/it-v3-access-token-b2b2c.md): This API is used to get customer specific Authorization Token which is used to perform any customer specific operation like Card Unbinding or Charge Payment. This Token is passed along with B2B Token.
+- [Account Verification](https://docs.payments.of.ayoconnect.id/reference/it-v2-account-inquiry-external.md): This API is used to validate bank accounts.   - A response code `2001600` indicates that the request has been successfully accepted and is being processed asynchronously.   - If a `5XX16XX` response…
+- [Balance Inquiry](https://docs.payments.of.ayoconnect.id/reference/it-v2-balance-inquiry.md): This API is used to check the current available balance for disbursement of the merchant account.
+- [Disbursement](https://docs.payments.of.ayoconnect.id/reference/it-v2-transfer-interbank.md): This API is used to initiate a disbursement.  - HTTP 200 means the request has been successfully received. - Disbursement is processed asynchronously, so the final transaction result may not be…
+- [Status Inquiry](https://docs.payments.of.ayoconnect.id/reference/it-v2-transfer-status.md): This API returns the current disbursement status.  - A response code 2003600 indicates that the request was processed successfully, and the disbursement status returned in the response is correct and…
+
+## API Reference: Scheduler APIs
+- [Generate B2B Access Token API](https://docs.payments.of.ayoconnect.id/reference/generatetokenb2b-1.md): This API is used to generate an 'Access Token,' which will be passed later in the header with the 'Authorization' key to other API calls. It is recommended to store and reuse it for the duration of…
+- [Create Scheduler](https://docs.payments.of.ayoconnect.id/reference/createscheduler.md): This API is used to create a Scheduler. The first transaction date must be at least H+1 from the request date; immediate payment is not supported. The API returns synchronously and does not return…
+- [Get Scheduler Details](https://docs.payments.of.ayoconnect.id/reference/getscheduler.md): This API is used to retrieve Scheduler details and the generated schedule list. <br/><br/>*Service Code: 92*
+- [Update Scheduler Details](https://docs.payments.of.ayoconnect.id/reference/updatescheduler.md): This API is used to update Scheduler details. Cancelling the entire Scheduler is handled by this API by setting `schedulerStatus` to `4` (CANCELLED).  The API also supports updating the customer's…
+- [Get Schedule Details](https://docs.payments.of.ayoconnect.id/reference/getschedule.md): This API is used to retrieve the details of a specific Schedule and its payment execution attempts. The underlying payment product remains the source of truth for the actual payment transaction.…
+- [Update Schedule Details](https://docs.payments.of.ayoconnect.id/reference/updateschedule.md): This API is used to update an individual Schedule. To cancel only one scheduled occurrence, set `status` to `11` (CANCELLED). An updated transaction date must not result in an immediate/same-day…
+
+## API Reference: Recurring Payment Instructions (1.0.0)
+- [Create](https://docs.payments.of.ayoconnect.id/reference/rpi-create-1.md): This API generates an unique URL for opening the RPI confirmation screen.  The API returns a 201 HTTP response code in case of a successful response.  The API returns a 400 HTTP response code in case…
+- [Update Bill Amount](https://docs.payments.of.ayoconnect.id/reference/rpi-update-bill-amount-1.md): This API allows to update bill amount of a scheduled instruction.  The API returns a 200 HTTP response code in case of a successful response.  The API returns a 400 HTTP response code in case of a…
+- [Get](https://docs.payments.of.ayoconnect.id/reference/rpi-get-1.md): The API returns a 200 HTTP response code in case of a successful response.  The API returns a 400 HTTP response code in case of a bad request (for example, missing and/or wrong headers).  The API…
+- [Cancel](https://docs.payments.of.ayoconnect.id/reference/rpi-cancel-1.md): This API cancels recurring payment instruction and future Payments will not be charged.  The API returns a 200 HTTP response code in case of a successful response.  The API returns a 400 HTTP…
+
+## API Reference: PPOB - Bill Payments (2.0)
+- [Setup Connection](https://docs.payments.of.ayoconnect.id/reference/setup-connection.md)
+- [Token Generation](https://docs.payments.of.ayoconnect.id/reference/token-generation.md)
+- [API Request](https://docs.payments.of.ayoconnect.id/reference/api-request.md)
+- [Inquiry](https://docs.payments.of.ayoconnect.id/reference/inquiry.md): https://stage-openapigateway-ppob.ayoconnect.id/api/v2/bill/check
+- [Cancelation](https://docs.payments.of.ayoconnect.id/reference/cancelation.md)
+- [Payment](https://docs.payments.of.ayoconnect.id/reference/payment-2.md): https://stage-openapigateway-ppob.ayoconnect.id/api/v2/bill/payment
+- [Check Status](https://docs.payments.of.ayoconnect.id/reference/check-status.md): https://stage-openapigateway-ppob.ayoconnect.id/api/v2/bill/status
+- [Check Balance](https://docs.payments.of.ayoconnect.id/reference/check-balance.md): https://stage-openapigateway-ppob.ayoconnect.id/api/v2/partner/balance
+- [Product List](https://docs.payments.of.ayoconnect.id/reference/product-list.md): https://stage-openapigateway-ppob.ayoconnect.id/api/v2/partner/products
+- [Product Notification](https://docs.payments.of.ayoconnect.id/reference/product-notification.md)
+- [Callback](https://docs.payments.of.ayoconnect.id/reference/callback.md)
+- [PPOB - Categorised Response ](https://docs.payments.of.ayoconnect.id/reference/categorised-response-inquiry-and-payment.md)
+  - [PULSA](https://docs.payments.of.ayoconnect.id/reference/pulsa.md)
+  - [Paket Data](https://docs.payments.of.ayoconnect.id/reference/paket-data.md)
+  - [E-Wallet Top Up](https://docs.payments.of.ayoconnect.id/reference/e-wallet-top-up.md)
+  - [Digital Voucher](https://docs.payments.of.ayoconnect.id/reference/digital-voucher.md)
+  - [PLN Prepaid](https://docs.payments.of.ayoconnect.id/reference/pln-prepaid.md)
+  - [PLN Postpaid](https://docs.payments.of.ayoconnect.id/reference/pln-postpaid.md)
+  - [Internet and TV](https://docs.payments.of.ayoconnect.id/reference/internet-and-tv.md)
+  - [Mobile Postpaid (Pascabayar)](https://docs.payments.of.ayoconnect.id/reference/mobile-postpaid-pascabayar.md)
+  - [PDAM](https://docs.payments.of.ayoconnect.id/reference/pdam.md)
+  - [BPJS Kesehatan](https://docs.payments.of.ayoconnect.id/reference/bpjs-kesehatan.md)
+  - [BPJSTK - BPU](https://docs.payments.of.ayoconnect.id/reference/bpjstk-bpu.md)
+  - [BPJSTK - PU](https://docs.payments.of.ayoconnect.id/reference/bpjstk-pu.md)
+  - [BPJS Registration BPU](https://docs.payments.of.ayoconnect.id/reference/bpjs-registration-bpu.md)
+  - [Google Play](https://docs.payments.of.ayoconnect.id/reference/google-play.md)
+- Embedded Lifestyle 
+  - [Train Ticket](https://docs.payments.of.ayoconnect.id/reference/train-ticket.md)
+  - [Flight Ticket](https://docs.payments.of.ayoconnect.id/reference/flight-ticket.md)
+  - [Hotel](https://docs.payments.of.ayoconnect.id/reference/hotel.md)
+- [Response Code ](https://docs.payments.of.ayoconnect.id/reference/response-code.md)
+- [HTTP Errors](https://docs.payments.of.ayoconnect.id/reference/http-errors.md)
+- [Postman Collection](https://docs.payments.of.ayoconnect.id/reference/postman-collection.md)
+- [Stage Testing Account](https://docs.payments.of.ayoconnect.id/reference/stage-testing-account.md)
+- [Important Notes](https://docs.payments.of.ayoconnect.id/reference/important-notes.md)
+
+## API Reference: E-Wallet Management (1.0.0)
+- [Generate B2B Access Token API](https://docs.payments.of.ayoconnect.id/reference/em-v1-access-token-b2b.md): This API is used to generate a B2B access token. Store and reuse the token for the duration indicated by the expiresIn field. <br/><br/>*Service Code: 73*
+- [Account Creation API](https://docs.payments.of.ayoconnect.id/reference/em-v1-registration-account-creation.md): This API creates an E-Wallet account. The merchant must specify additionalInfo.additionalInfo.accountType as NON-KYC or KYC. For NON-KYC account creation, KYC identity and document information is not…
+- [Update Account API](https://docs.payments.of.ayoconnect.id/reference/em-v1-update-account.md): This API partially updates an existing E-Wallet account. Omitted fields remain unchanged. email, name, and phoneNo are optional profile fields and are updated when provided without KYC validation…
+- [Master Balance Inquiry API](https://docs.payments.of.ayoconnect.id/reference/em-v1-balance-inquiry.md): This API retrieves the merchant master E-Wallet balance aggregated across the merchant sub-accounts. It follows the SNAP Balance Inquiry service concept. <br/><br/>*Service Code: 11*
+- [Account Detail Inquiry API](https://docs.payments.of.ayoconnect.id/reference/em-v1-account-detail-inquiry.md): This API retrieves the complete stored detail for one E-Wallet account, including current balance, customer identifier, account status, account type, timestamps, optional profile information, and…
+
+## Changelog
+- [Card Acceptance New API](https://docs.payments.of.ayoconnect.id/changelog/card-acceptance-new-api.md)
+- [Welcome to Ayoconnect Payment Solutions](https://docs.payments.of.ayoconnect.id/changelog/welcome-to-payments-ayoconnect.md)

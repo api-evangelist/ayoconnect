@@ -1,0 +1,593 @@
+[
+ {
+  "page": "https://docs.ayoconnect.id/reference/post_v1-bill-check.md",
+  "definition": {
+   "openapi": "3.0.0",
+   "info": {
+    "title": "Ayoconnect ",
+    "description": "Open API definition",
+    "version": "1.0.0"
+   },
+   "paths": {
+    "/v1/bill/check": {
+     "post": {
+      "summary": "Inquiry API",
+      "parameters": [
+       {
+        "$ref": "#/components/parameters/AccessKeyId"
+       },
+       {
+        "$ref": "#/components/parameters/AccessToken"
+       },
+       {
+        "$ref": "#/components/parameters/ApiVersion"
+       }
+      ],
+      "responses": {
+       "200": {
+        "description": "Success",
+        "content": {
+         "application/json": {
+          "schema": {
+           "$ref": "#/components/schemas/InquiryResponse"
+          }
+         }
+        }
+       },
+       "401": {
+        "description": "Success",
+        "content": {
+         "application/json": {
+          "schema": {
+           "$ref": "#/components/schemas/AuthenticationFailed"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   },
+   "servers": [
+    {
+     "url": "//dev0.openapi.ayopop.id/api"
+    }
+   ],
+   "components": {
+    "parameters": {
+     "AccessKeyId": {
+      "in": "header",
+      "name": "KEY",
+      "required": true,
+      "description": "Client Access Id provided while registration with Ayopop (5afe25fa)",
+      "schema": {
+       "type": "string"
+      }
+     },
+     "AccessToken": {
+      "in": "header",
+      "name": "TOKEN",
+      "required": true,
+      "description": "JWT Auth token or Secret - Pre Shared key (ascasc.asas.asasasf121q21221sdf1hbvv)",
+      "schema": {
+       "type": "string"
+      }
+     },
+     "ApiVersion": {
+      "in": "header",
+      "name": "VERSION",
+      "required": true,
+      "description": "Api version to be used (1.0.2-rc)",
+      "schema": {
+       "type": "string"
+      }
+     }
+    },
+    "schemas": {
+     "InquiryResponse": {
+      "properties": {
+       "responseCode": {
+        "type": "integer"
+       },
+       "success": {
+        "type": "boolean"
+       },
+       "message": {
+        "properties": {
+         "ID": {
+          "type": "string"
+         },
+         "EN": {
+          "type": "string"
+         }
+        }
+       },
+       "data": {
+        "properties": {
+         "inquiryId": {
+          "type": "integer"
+         },
+         "accountNumber": {
+          "type": "string"
+         },
+         "customerName": {
+          "type": "string"
+         },
+         "productName": {
+          "type": "string"
+         },
+         "productCode": {
+          "type": "string"
+         },
+         "category": {
+          "type": "string"
+         },
+         "amount": {
+          "type": "integer"
+         },
+         "totalAdmin": {
+          "type": "integer"
+         },
+         "processingFee": {
+          "type": "integer"
+         },
+         "validity": {
+          "type": "string"
+         },
+         "customerDetail": {
+          "type": "array",
+          "items": {
+           "type": "object"
+          }
+         },
+         "billDetails": {
+          "type": "array",
+          "items": {
+           "type": "object"
+          }
+         },
+         "productDetails": {
+          "type": "array",
+          "items": {
+           "type": "object"
+          }
+         },
+         "extraFields": {
+          "type": "array",
+          "items": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "AuthenticationFailed": {
+      "properties": {
+       "responseCode": {
+        "type": "integer"
+       },
+       "success": {
+        "type": "boolean"
+       },
+       "message": {
+        "properties": {
+         "ID": {
+          "type": "string"
+         },
+         "EN": {
+          "type": "string"
+         }
+        }
+       },
+       "data": {
+        "type": "object"
+       }
+      }
+     }
+    }
+   },
+   "x-readme": {
+    "explorer-enabled": true,
+    "proxy-enabled": true,
+    "samples-enabled": true
+   }
+  }
+ },
+ {
+  "page": "https://docs.ayoconnect.id/reference/post_v1-bill-payment.md",
+  "definition": {
+   "openapi": "3.0.0",
+   "info": {
+    "title": "Ayoconnect ",
+    "description": "Open API definition",
+    "version": "1.0.0"
+   },
+   "paths": {
+    "/v1/bill/payment": {
+     "post": {
+      "summary": "Payment API",
+      "parameters": [
+       {
+        "$ref": "#/components/parameters/AccessKeyId"
+       },
+       {
+        "$ref": "#/components/parameters/AccessToken"
+       },
+       {
+        "$ref": "#/components/parameters/ApiVersion"
+       }
+      ],
+      "responses": {
+       "200": {
+        "description": "Success",
+        "content": {
+         "application/json": {
+          "schema": {
+           "$ref": "#/components/schemas/PaymentResponse"
+          }
+         }
+        }
+       },
+       "401": {
+        "description": "Success",
+        "content": {
+         "application/json": {
+          "schema": {
+           "$ref": "#/components/schemas/AuthenticationFailed"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   },
+   "servers": [
+    {
+     "url": "//dev0.openapi.ayopop.id/api"
+    }
+   ],
+   "components": {
+    "parameters": {
+     "AccessKeyId": {
+      "in": "header",
+      "name": "KEY",
+      "required": true,
+      "description": "Client Access Id provided while registration with Ayopop (5afe25fa)",
+      "schema": {
+       "type": "string"
+      }
+     },
+     "AccessToken": {
+      "in": "header",
+      "name": "TOKEN",
+      "required": true,
+      "description": "JWT Auth token or Secret - Pre Shared key (ascasc.asas.asasasf121q21221sdf1hbvv)",
+      "schema": {
+       "type": "string"
+      }
+     },
+     "ApiVersion": {
+      "in": "header",
+      "name": "VERSION",
+      "required": true,
+      "description": "Api version to be used (1.0.2-rc)",
+      "schema": {
+       "type": "string"
+      }
+     }
+    },
+    "schemas": {
+     "PaymentResponse": {
+      "properties": {
+       "responseCode": {
+        "type": "integer"
+       },
+       "success": {
+        "type": "boolean"
+       },
+       "message": {
+        "properties": {
+         "ID": {
+          "type": "string"
+         },
+         "EN": {
+          "type": "string"
+         }
+        }
+       },
+       "data": {
+        "properties": {
+         "refNumber": {
+          "type": "string"
+         },
+         "transactionId": {
+          "type": "integer"
+         },
+         "accountNumber": {
+          "type": "string"
+         },
+         "amount": {
+          "type": "integer"
+         },
+         "totalAdmin": {
+          "type": "integer"
+         },
+         "processingFee": {
+          "type": "integer"
+         },
+         "denom": {
+          "type": "string"
+         },
+         "productCode": {
+          "type": "string"
+         },
+         "productName": {
+          "type": "string"
+         },
+         "category": {
+          "type": "string"
+         },
+         "token": {
+          "type": "string"
+         },
+         "customerDetail": {
+          "type": "array",
+          "items": {
+           "type": "object"
+          }
+         },
+         "billDetails": {
+          "type": "array",
+          "items": {
+           "type": "object"
+          }
+         },
+         "productDetails": {
+          "type": "array",
+          "items": {
+           "type": "object"
+          }
+         },
+         "extraFields": {
+          "type": "array",
+          "items": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "AuthenticationFailed": {
+      "properties": {
+       "responseCode": {
+        "type": "integer"
+       },
+       "success": {
+        "type": "boolean"
+       },
+       "message": {
+        "properties": {
+         "ID": {
+          "type": "string"
+         },
+         "EN": {
+          "type": "string"
+         }
+        }
+       },
+       "data": {
+        "type": "object"
+       }
+      }
+     }
+    }
+   },
+   "x-readme": {
+    "explorer-enabled": true,
+    "proxy-enabled": true,
+    "samples-enabled": true
+   }
+  }
+ },
+ {
+  "page": "https://docs.ayoconnect.id/reference/post_v1-bill-status.md",
+  "definition": {
+   "openapi": "3.0.0",
+   "info": {
+    "title": "Ayoconnect ",
+    "description": "Open API definition",
+    "version": "1.0.0"
+   },
+   "paths": {
+    "/v1/bill/status": {
+     "post": {
+      "summary": "Status API",
+      "parameters": [
+       {
+        "$ref": "#/components/parameters/AccessKeyId"
+       },
+       {
+        "$ref": "#/components/parameters/AccessToken"
+       },
+       {
+        "$ref": "#/components/parameters/ApiVersion"
+       }
+      ],
+      "responses": {
+       "200": {
+        "description": "Success",
+        "content": {
+         "application/json": {
+          "schema": {
+           "$ref": "#/components/schemas/StatusResponse"
+          }
+         }
+        }
+       },
+       "401": {
+        "description": "Success",
+        "content": {
+         "application/json": {
+          "schema": {
+           "$ref": "#/components/schemas/AuthenticationFailed"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   },
+   "servers": [
+    {
+     "url": "//dev0.openapi.ayopop.id/api"
+    }
+   ],
+   "components": {
+    "parameters": {
+     "AccessKeyId": {
+      "in": "header",
+      "name": "KEY",
+      "required": true,
+      "description": "Client Access Id provided while registration with Ayopop (5afe25fa)",
+      "schema": {
+       "type": "string"
+      }
+     },
+     "AccessToken": {
+      "in": "header",
+      "name": "TOKEN",
+      "required": true,
+      "description": "JWT Auth token or Secret - Pre Shared key (ascasc.asas.asasasf121q21221sdf1hbvv)",
+      "schema": {
+       "type": "string"
+      }
+     },
+     "ApiVersion": {
+      "in": "header",
+      "name": "VERSION",
+      "required": true,
+      "description": "Api version to be used (1.0.2-rc)",
+      "schema": {
+       "type": "string"
+      }
+     }
+    },
+    "schemas": {
+     "StatusResponse": {
+      "properties": {
+       "responseCode": {
+        "type": "integer"
+       },
+       "success": {
+        "type": "boolean"
+       },
+       "message": {
+        "properties": {
+         "ID": {
+          "type": "string"
+         },
+         "EN": {
+          "type": "string"
+         }
+        }
+       },
+       "data": {
+        "properties": {
+         "refNumber": {
+          "type": "string"
+         },
+         "transactionId": {
+          "type": "integer"
+         },
+         "accountNumber": {
+          "type": "string"
+         },
+         "amount": {
+          "type": "integer"
+         },
+         "totalAdmin": {
+          "type": "integer"
+         },
+         "processingFee": {
+          "type": "integer"
+         },
+         "denom": {
+          "type": "string"
+         },
+         "productCode": {
+          "type": "string"
+         },
+         "productName": {
+          "type": "string"
+         },
+         "category": {
+          "type": "string"
+         },
+         "token": {
+          "type": "string"
+         },
+         "customerDetail": {
+          "type": "array",
+          "items": {
+           "type": "object"
+          }
+         },
+         "billDetails": {
+          "type": "array",
+          "items": {
+           "type": "object"
+          }
+         },
+         "productDetails": {
+          "type": "array",
+          "items": {
+           "type": "object"
+          }
+         },
+         "extraFields": {
+          "type": "array",
+          "items": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "AuthenticationFailed": {
+      "properties": {
+       "responseCode": {
+        "type": "integer"
+       },
+       "success": {
+        "type": "boolean"
+       },
+       "message": {
+        "properties": {
+         "ID": {
+          "type": "string"
+         },
+         "EN": {
+          "type": "string"
+         }
+        }
+       },
+       "data": {
+        "type": "object"
+       }
+      }
+     }
+    }
+   },
+   "x-readme": {
+    "explorer-enabled": true,
+    "proxy-enabled": true,
+    "samples-enabled": true
+   }
+  }
+ }
+]

@@ -1,0 +1,10 @@
+generated: '2026-10-19'
+method: derived
+source: openapi/ayoconnect-ayoconnect-api-openapi.yml
+deployment:
+  mode: none
+  endpoint: null
+  install: null
+  package: null
+  auth: none
+  verified: derived
