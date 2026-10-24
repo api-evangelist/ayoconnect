@@ -15,6 +15,11 @@ modified: '2026-10-19'
 tags:
 - Company
 - Payments
+- Fintech
+- Indonesia
+tags_raw:
+- Company
+- Payments
 - API
 - FinTech
 - Indonesia
@@ -69,6 +74,8 @@ apis:
   name: Ayoconnect Bill API
   description: The Bill API from Ayoconnect — 3 operation(s) for bill.
   tags:
+  - Bills
+  tags_raw:
   - Bill
   properties:
   - type: OpenAPI
